@@ -6,5 +6,6 @@ export const HomeSection = styled.section`
   background-size: cover;
   position: relative;
   display: flex;
+  background-color: #8928C6;
 `
 
