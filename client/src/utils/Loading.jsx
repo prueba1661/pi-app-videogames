@@ -3,7 +3,12 @@ import loading from '../assets/loading.gif'
 import styles from './utils.module.css'
 
 const Loading = () => (
-  <img src={loading} alt="Loading..." className={styles.loading} />
+  <div>
+  <img src={loading} alt="loading" 
+  className={styles.loading}
+  />
+  <p className={styles.loadingText}>Loading...</p>
+  </div>
 )
 
 export default Loading

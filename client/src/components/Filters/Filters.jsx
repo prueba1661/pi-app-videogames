@@ -88,7 +88,7 @@ export default function Filters() {
       <FiltersContainer>
         <h2>Filters</h2>
         <div>
-          <p>Sort by name</p>
+          <h3>Sort by name</h3>
           <InputFilter
             name="orderByName"
             defaultValue={'default'}
@@ -102,8 +102,8 @@ export default function Filters() {
             ))}
           </InputFilter>
         </div>
-        <div>
-          <p>Sort by Rating</p>
+        <div className='text'>
+          <h3>Sort by Rating</h3>
           <InputFilter
             name="orderByRating"
             defaultValue={'default'}
@@ -118,7 +118,7 @@ export default function Filters() {
           </InputFilter>
         </div>
         <div>
-          <p>Filter by Gender</p>
+          <h3>Filter by Gender</h3>
           <InputFilter
             name="filterByGenres"
             defaultValue={'default'}
@@ -133,7 +133,7 @@ export default function Filters() {
           </InputFilter>
         </div>
         <div>
-          <p>Filter by Origin</p>
+          <h3>Filter by Origin</h3>
           <InputFilter
             name="Origin"
             defaultValue={'default'}

@@ -13,7 +13,7 @@ import {
   Gallery,
   MainContent,
   Trailers,
-} from './detail.styles'
+} from './Detail.styles'
 
 export default function Detail() {
   const { id } = useParams()

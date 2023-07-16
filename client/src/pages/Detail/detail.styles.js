@@ -3,7 +3,7 @@ import styled, { keyframes } from 'styled-components'
 export const DetailWrapper = styled.section`
   padding: 50px 50px;
   scroll-behavior: smooth;
-  background-color: rgba(16, 18, 27, 0.6);
+  background-color: #2C4152;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   display: flex;
@@ -31,12 +31,12 @@ export const DetailGame = styled.div`
 export const MainContent = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
+  gap: 20px;
   align-items: center;
   justify-content: center;
   img {
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
   }
 `
 
@@ -52,9 +52,12 @@ export const ContentBlock = styled.div`
   }
   h1 {
    font-size: 2.5rem;
+   color: #9A9A9B;
   }
   p{
+    color: #9A9A9B;
    text-align: left;
+    font-weight: 700;
   }
 `
 
@@ -68,8 +71,10 @@ export const Features = styled.div`
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 5px;
   width: 100%;
+  font-weight: 500;
+  color: #737373;
 `
 
 export const Feature = styled.div`
@@ -80,12 +85,19 @@ export const Feature = styled.div`
 
 export const Gallery = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  gap: 20px;
+  grid-template-rows: repeat (3, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
+  img {
+    width: 100%;
+    height: auto;
+    
+  }
 `
 
 export const Trailers = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
   video {
   width: 100%;

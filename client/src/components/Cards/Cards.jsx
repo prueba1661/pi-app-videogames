@@ -72,7 +72,7 @@ export default function Cards() {
               dispatch(setCurrentPage(currentPage - 1), handleClick())
             }
           >
-            Anterior
+            Prev
           </button>
           {pageNumbers.map((pageNumber) => (
             <PageNumber
@@ -91,7 +91,7 @@ export default function Cards() {
               dispatch(setCurrentPage(currentPage + 1), handleClick())
             }
           >
-            Siguiente
+            Next
           </button>
         </Pagination>
       ) : (

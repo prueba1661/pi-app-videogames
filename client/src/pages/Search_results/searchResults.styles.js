@@ -8,5 +8,5 @@ export const CardsContainer = styled.div`
   padding: 50px 50px;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  background-color: #205860;
+  background-color: #E863CF;
 `

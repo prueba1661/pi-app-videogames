@@ -3,12 +3,12 @@ import styled from 'styled-components';
 export const FiltersWrapper = styled.section`
   width: 17%;
   height: 100%;
-  padding: 10pxpx;
+  padding: 5px;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #A65FD4;
+  background-color: #283655;
 `
 
 export const FiltersContainer = styled.div`
@@ -19,7 +19,7 @@ font-size: 16px;
 export const InputFilter = styled.select`
   width: 100%;
   height: 100%;
-  border: black 2px solid;
+  border: white 1px solid;
   background-color: transparent;
   border-radius: 10px;
   font-size: 16px;
@@ -36,9 +36,11 @@ export const InputFilter = styled.select`
 `
 
 export const ResetBtn = styled.button`
-  border: black 2px solid;
+  border: white 1px solid;
   background-color: transparent;
   font-size: 16px;
+  font-weight: 900;
+  color: white;
   border-radius: 10px;
   padding: 10px 15px;
   margin-top: 30px;

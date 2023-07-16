@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
-import styles from './landing.module.css'
+import styles from './Landing.module.css'
 
 export default function Landing() {
   return (

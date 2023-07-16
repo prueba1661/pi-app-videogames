@@ -4,8 +4,8 @@ import { useSearchParams } from 'react-router-dom'
 import Card from '../../components/Card/Card'
 import { searchGame } from '../../redux/actions/actions'
 import Loading from '../../utils/Loading'
-import { CardsContainer } from './searchResults.styles'
-const NoResults = () => <div>we have not found games.</div>
+import { CardsContainer } from './SearchResults.styles'
+const NoResults = () => <div>Sorry, game not found</div>
 export default function SearchResults() {
   const dispatch = useDispatch()
   const [loading, setLoading] = useState(false)

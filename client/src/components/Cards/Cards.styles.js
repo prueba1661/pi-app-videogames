@@ -4,7 +4,7 @@ export const CardsWrapper = styled.section`
   display: flex;
   flex-direction: column;
   padding: 50px;
-  background-color: #8928C6;
+  background-color: #192134;
   height: 100%;
   width: 100%;
   overflow-y: scroll;
@@ -52,7 +52,7 @@ export const Pagination = styled.div`
   gap: 10px;
   button{
    border: none;
-   background-color: #14162b;
+   background-color: #44669B;
    border-radius: 4px;
    padding: 5px 20px;
    transition: padding 0.3s ease-in-out;

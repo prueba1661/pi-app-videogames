@@ -7,10 +7,10 @@ export const Container = styled.div`
   position: sticky;
   place-items: center;
   place-content: space-around;
-  background-color: rgba(16, 18, 27, 0.4);
+  background-color: #283655;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(223, 223, 223, 0.45);
+  border-bottom: 1px solid #400053;
   z-index: 100;
   display: flex;
   top: 0;
@@ -40,6 +40,7 @@ export const Item = styled(NavLink)`
   display: block;
   padding: 1em;
   cursor: pointer;
+  text-decoration: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -55,8 +56,17 @@ export const Item = styled(NavLink)`
   }
 `
 
-export const Item__Link = styled.div`
+export const Item_Link = styled.div`
+  padding: 5px;
+  text-decoration: none;
   display: flex;
   gap: 5px;
+  justify-content: center;
   align-items: center;
+  color: white;
+  font-size: 1.3em;
+  font-weight: 800;
+  border: white 3px solid;
+  background-color: transparent;
+  border-radius: 4px;
 `

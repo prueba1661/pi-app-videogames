@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { SearchBar, SearchBarInput, SearchSubmit } from './search.styles'
+import { SearchBar, SearchBarInput, SearchSubmit } from './Search.styles'
 
 export default function Search() {
   const navigate = useNavigate()
@@ -17,7 +17,7 @@ export default function Search() {
     <SearchBar onSubmit={handleSubmit}>
       <SearchBarInput
         type="search"
-        placeholder="Search your favorite videogame"
+        placeholder="Search your favorite game"
         name={search}
         onChange={handleInputValue}
         value={search}

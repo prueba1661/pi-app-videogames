@@ -9,7 +9,7 @@ import {
   CardContentStores,
   CardImage,
   ImageContainer,
-} from './card.styles'
+} from './Card.styles'
 
 export default function Card(props) {
   const { id, title, image, rating, genres, index, stores } = props
