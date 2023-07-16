@@ -71,7 +71,7 @@ export default function AddGame() {
     if (Object.keys(errors).length === 0) {
       dispatch(addGame(gameData))
     }
-    setSuccess('Tu juego se ha creado correctamente')
+    setSuccess('Game added successfully!')
     setTimeout(() => {
       navigate(`/add-game/success`)
     }, 1500)
@@ -80,33 +80,33 @@ export default function AddGame() {
   return (
     <AddGameContainer>
       <AddGameFormContainer>
-        <h2>Add your game to our database</h2>
+        <h2>Let's create an awesome game here!</h2>
         <AddGameForm onSubmit={handleSubmit} method="post">
-          <label htmlFor="name">Write the name of your game</label>
+          <label htmlFor="name">Write your game name</label>
           <input
             type="text"
             name="name"
-            placeholder="Name"
+            placeholder="Name..."
             onChange={handleInputChange}
           />
           <span>{errors.name}</span>
-          <label htmlFor="image">Insert your game image url</label>
+          <label htmlFor="image">Insert url for the image</label>
           <input
             type="text"
             name="image"
-            placeholder="image"
+            placeholder="http://..."
             onChange={handleInputChange}
           />
           <span>{errors.image}</span>
-          <label htmlFor="description">Write your game description</label>
+          <label htmlFor="description">Let's be creative, write the description for your game!</label>
           <textarea
             type="text"
             name="description"
-            placeholder="description"
+            placeholder="description..."
             onChange={handleInputChange}
           />
           <span>{errors.description}</span>
-          <label htmlFor="launchDate">Pick your game Launch Date</label>
+          <label htmlFor="launchDate">Now choose the release date:</label>
           <input
             type="date"
             name="launchDate"
@@ -114,7 +114,7 @@ export default function AddGame() {
             onChange={handleInputChange}
           />
           <span>{errors.launchDate}</span>
-          <label htmlFor="rating">Pick your game rating</label>
+          <label htmlFor="rating">Now let's pick the rating!</label>
           <input
             type="range"
             name="rating"
@@ -127,7 +127,7 @@ export default function AddGame() {
           <span>{gameData.rating}</span>
           <span>{errors.rating}</span>
           <SelectorsBlock>
-            <span>Pick your game genres</span>
+            <span>Now select the genres for your game:</span>
             <SelectorsItems>
               {genres.map((genre) => (
                 <label key={genre.id}>
@@ -144,7 +144,7 @@ export default function AddGame() {
             </SelectorsItems>
           </SelectorsBlock>
           <SelectorsBlock>
-            <span>Pick your game Platforms</span>
+            <span>And finally, choose the platforms:</span>
             <SelectorsItems>
               {platforms.map((p, index) => (
                 <label key={index}>

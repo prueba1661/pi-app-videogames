@@ -12,7 +12,7 @@ export const AddGameContainer = styled.section`
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  background-color: rgba(16, 18, 27, 0.4);
+  background-color: #253761;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   animation: ${fadeIn} 6s cubic-bezier(0.25, 1, 0.3, 1) both;
@@ -36,12 +36,12 @@ export const AddGameForm = styled.form`
   textarea {
    padding: 8px 20px;
   border: none;
-  background-color: #14162b;
+  background-color: #154C97;
   border-radius: 4px;
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 700;
   box-shadow: 0 0 0 1px rgba(113 119 144 / 25%);
-  color: #f9fafb;
+  color: darkgray;
   }
   input:focus:not(:focus-visible),
   textarea:focus-visible {
@@ -55,7 +55,7 @@ export const SelectorsBlock = styled.div`
   gap: 30px;
   padding: 50px;
   border: none;
-  background-color: #14162b;
+  background-color: #0C2A5B;
   border-radius: 14px;
   font-size: 15px;
   font-weight: 500;
@@ -71,15 +71,17 @@ export const SelectorsItems = styled.div`
 
 export const SentBtn = styled.button`
    box-sizing: border-box;
-  border: none;
-  background-color: #14162b;
+  border: white 1px solid;
+  background-color: transparent;
   border-radius: 4px;
   padding: 10px 20px;
   transition: scale 0.3s ease-in-out;
   cursor: pointer;
   &:disabled{
    background-color: #ccc !important;
-   color: #14162b;
+   color: white;
+   font-weight: 700;
+   font-size: 16px;
    cursor: default;
   }
   &:enabled:hover{
