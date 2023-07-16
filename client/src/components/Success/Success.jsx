@@ -6,7 +6,7 @@ import {
   SuccessLogo,
   SuccessTitle,
   SuccessWrapper,
-} from './Success.styles'
+} from './success.styles'
 
 export default function Success() {
   return (
