@@ -24,7 +24,7 @@ const initialState = {
   currentPage: 1,
 }
 
-export default function (state = initialState, action) {
+export default function rootReducer(state = initialState, action) {
   switch (action.type) {
     case GET_GAMES:
       return {
