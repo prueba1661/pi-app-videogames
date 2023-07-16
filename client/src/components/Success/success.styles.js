@@ -92,7 +92,7 @@ export const SuccessTitle = styled.h1`
   &:after {
    position: absolute;
    top: 0;
-   content: 'Your game has been added to our Database.';
+   content: 'Game added correctly!!';
    width: 100%;
    background-color: transparent;
    clip: rect(0, 0, 0, 0);
