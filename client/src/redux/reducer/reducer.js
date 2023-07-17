@@ -119,10 +119,10 @@ export default function rootReducer(state = initialState, action) {
       const copyOrigins = [...state.games]
       let originFilter = copyOrigins
       if (action.payload === 'Api') {
-        // Filtre los juegos que tienen números en su ID
+        // Filtra los juegos que tienen números
         originFilter = originFilter.filter((game) => /^\d+$/.test(game.id))
       } else if (action.payload === 'Created') {
-        // Filtre los juegos que tienen guiones en su ID
+        // Filtra los juegos que tienen guiones
         originFilter = originFilter.filter((game) => isNaN(game.id))
       }
       const copyfilterAbc = [...originFilter]
