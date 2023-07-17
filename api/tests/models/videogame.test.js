@@ -15,7 +15,7 @@ const VideoGame = sequelize.models.videogame;
 
 // Run the test
 describe('VideoGame Model', () => {
-  beforeAll(async () => {
+  beforeEach(async () => {
     // Connect to the test database and sync the models
     await sequelize.sync({ force: true });
   });
@@ -25,7 +25,7 @@ describe('VideoGame Model', () => {
     await sequelize.close();
   });
 
-  it('should create a video game', async () => {
+  it('should create a videogame', async () => {
     const game = await VideoGame.create({
       name: 'Example Game',
       image: 'example.jpg',
