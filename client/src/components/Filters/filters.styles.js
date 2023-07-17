@@ -8,12 +8,13 @@ export const FiltersWrapper = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #283655;
+  background-color: #1E2E34;
 `
 
 export const FiltersContainer = styled.div`
 position: relative;
 font-size: 16px;
+color: white;
 `
 
 export const InputFilter = styled.select`
@@ -46,9 +47,9 @@ export const ResetBtn = styled.button`
   margin-top: 30px;
   min-width: 200px;
   transition: transform 0.3s ease-in-out;
-  text-shadow: 0 0 0 1px white
   cursor: pointer;
   &:hover{
    transform: scale(1.05);
+   box-shadow: 0 0 0 1px #8A9CE4;
   }
 `

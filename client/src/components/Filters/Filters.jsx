@@ -148,7 +148,7 @@ export default function Filters() {
           </InputFilter>
         </div>
         <div>
-        <ResetBtn onClick={handleReset}>Reset Filters</ResetBtn>
+        <ResetBtn onClick={handleReset}>Reset all filters</ResetBtn>
         </div>
       </FiltersContainer>
     </FiltersWrapper>

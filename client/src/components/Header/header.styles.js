@@ -4,13 +4,10 @@ import styled from 'styled-components'
 export const Container = styled.div`
   width: 100%;
   height: 100px;
-  position: sticky;
   place-items: center;
   place-content: space-around;
-  background-color: #283655;
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid #400053;
+  background-color: #1E2E34;
+  border-bottom: 2px solid black;
   z-index: 100;
   display: flex;
   top: 0;
