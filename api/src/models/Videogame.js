@@ -52,27 +52,3 @@ module.exports = (sequelize) => {
   }
   )
 }
-
-// ,
-//     sequelize.define('genresGames', {
-//       id: {
-//         type: INTEGER,
-//         primaryKey: true,
-//       },
-//       gameId: {
-//         type: INTEGER,
-//         allowNull: false,
-//         references: {
-//           model: 'videogames',
-//           key: 'id'
-//         }
-//       },
-//       genrerId: {
-//         type: INTEGER,
-//         allowNull: false,
-//         references: {
-//           model: 'genres',
-//           key: 'id'
-//         }
-//       },
-//     })
