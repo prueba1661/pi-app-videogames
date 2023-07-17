@@ -11,7 +11,7 @@ const gameId = require('../controllers/gameid');
 
 const router = Router();
 
-// Middleware para manejar solicitudes sin query
+// Middleware para solicitudes sin query
 router.use('/videogames', (req, res, next) => {
  if (!Object.keys(req.query).length) {
   allGames(req, res, next); // Si no hay query, maneja la solicitud con allGames
@@ -20,7 +20,7 @@ router.use('/videogames', (req, res, next) => {
  }
 });
 
-// Middleware para manejar solicitudes con query
+// Middleware para solicitudes con query
 router.use('/videogames', search); // http://localhost:3001/videogames/?name=juego
 
 

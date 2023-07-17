@@ -1,5 +1,5 @@
 const { Sequelize, DataTypes } = require('sequelize');
-const defineModels = require('../models/videogame');
+const defineModels = require('../models/Videogame.js');
 
 // Create Sequelize instance and connect to a test database
 const sequelize = new Sequelize('DB_NAME', 'DB_USER', 'DB_PASSWORD', {
