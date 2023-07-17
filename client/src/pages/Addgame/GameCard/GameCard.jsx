@@ -49,7 +49,7 @@ export default function GameCard(props) {
   const emptystar = emptyStar.repeat(Math.floor(5 - Math.floor(data.rating)))
   return (
     <GameCardWrapper>
-      <h2>Preview your fricking awesome game.</h2>
+      <h2>Preview your game here!</h2>
       <AddGameCard>
         <ImageContainer>
           <CardImg src={data.image} alt={data.name} />

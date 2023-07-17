@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import logo from '../../assets/logoPad.jpg'
+import logoGames from '../../assets/logoGames.jpg'
 import Search from '../Search/Search'
 import { Container, Item, Item_Link, Logo, NavList } from './Header.styles.js'
 
@@ -13,7 +13,7 @@ export default function Header() {
   return (
     <Container>
       <NavLink to="/">
-        <Logo src={logo} alt="logo" />
+        <Logo src={logoGames} alt="logo" />
       </NavLink>
       <Search />
       <nav>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import logo from '../../assets/logoPad.jpg'
+import logoGames from '../../assets/logoGames.jpg'
 import {
   MainBtn,
   SuccessLogo,
@@ -11,10 +11,10 @@ import {
 export default function Success() {
   return (
     <SuccessWrapper>
-      <SuccessLogo src={logo} alt="logo" />
+      <SuccessLogo src={logoGames} alt="logo" />
       <SuccessTitle>Game added correctly!!</SuccessTitle>
       <Link to="/home">
-        <MainBtn>Go home</MainBtn>
+        <MainBtn>Go back home</MainBtn>
       </Link>
     </SuccessWrapper>
   )

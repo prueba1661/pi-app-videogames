@@ -30,6 +30,7 @@ export const ImageContainer = styled.figure`
   padding: 0;
   margin: 0;
   position: relative;
+  overflow: hidden;
 `
 
 export const CardImg = styled.img`
@@ -55,11 +56,14 @@ export const CardContent = styled.div`
   align-items: center;
   h2 {
    margin: 0;
-   font-size: 1.2rem;
-   font-weight: 300;
+   font-size: 1.5rem;
+   font-weight: 700;
+   color: #9A9A9B;
   }
   p {
    margin: 0;
+   color: #9A9A9B;
+   font-size: 0.9rem;
   }
 `
 
@@ -67,8 +71,10 @@ export const Genres = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
+  color: #9A9A9B;
   p {
    margin: 0;
+   color: #9A9A9B;
   }
 `
 
@@ -78,6 +84,7 @@ export const GenreList = styled.div`
   flex-direction: row;
   place-content: center center;
   flex-wrap: wrap;
+  color: #9A9A9B;
   max-width: 400px;
   span:not(:first-child)::before {
   content: '| ';

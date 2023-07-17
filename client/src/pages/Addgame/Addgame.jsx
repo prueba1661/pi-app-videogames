@@ -94,15 +94,15 @@ export default function AddGame() {
           <input
             type="text"
             name="image"
-            placeholder="http://..."
+            placeholder="https://..."
             onChange={handleInputChange}
           />
           <span>{errors.image}</span>
-          <label htmlFor="description">Let's be creative, write the description for your game!</label>
+          <label htmlFor="description">Now let's be creative, write the description!</label>
           <textarea
             type="text"
             name="description"
-            placeholder="description..."
+            placeholder="Description..."
             onChange={handleInputChange}
           />
           <span>{errors.description}</span>

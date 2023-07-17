@@ -2,8 +2,8 @@ import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  max-width: 100%;
-  height: 75px;
+  width: 100%;
+  height: 100px;
   position: sticky;
   place-items: center;
   place-content: space-around;
@@ -18,7 +18,7 @@ export const Container = styled.div`
 
 export const Logo = styled.img`
   width: auto;
-  max-height: 80px;
+  height: 100px;
   cursor: pointer;
 `
 
