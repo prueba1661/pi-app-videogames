@@ -51,7 +51,6 @@ export default function Detail() {
                 </p>
                 <p>Clasification: {game.esrb_rating?.name}</p>
                 <p>Rating: {game.rating}</p>
-                <p>Votes: {game.ratings_count}</p>
               </ContentData>
               <Features>
                 <Feature>
@@ -61,21 +60,9 @@ export default function Detail() {
                   ))}
                 </Feature>
                 <Feature>
-                  <p>Stores: </p>
-                  {game.stores?.map((store, index) => (
-                    <span key={index}>{store.name}</span>
-                  ))}
-                </Feature>
-                <Feature>
                   <p>Genres: </p>
                   {game.genres?.map((genre, index) => (
                     <span key={index}>{genre.name}</span>
-                  ))}
-                </Feature>
-                <Feature>
-                  <p>Tags: </p>
-                  {game.tags?.map((tag, index) => (
-                    <span key={index}>{tag}</span>
                   ))}
                 </Feature>
               </Features>
