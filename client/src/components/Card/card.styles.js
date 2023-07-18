@@ -1,14 +1,12 @@
 import styled, { keyframes } from "styled-components";
 
-const FadeIn = keyframes`
+const ScaleIn = keyframes`
   from {
-    opacity: 0;
-    transform: translateY(100px) translateX(100px);
+    transform: scale(0);
   }
 
   to {
-    opacity: 1;
-    transform: translateX(0) translateY(0);
+    transform: scale(1);
   }
 `
 
@@ -26,7 +24,7 @@ export const CardContainer = styled.div`
  border-radius: 5px;
  overflow: hidden;
  max-width: 300px;
- animation: ${FadeIn} 3s cubic-bezier(.25, 1, .30, 1) both ${(props) => props.index * 200}ms;
+ animation: ${ScaleIn} 1s ease-in-out both ${(props) => props.index * 200}ms;
  a{
   text-decoration: none;
   color: #fff;
