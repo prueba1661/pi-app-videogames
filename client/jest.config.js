@@ -4,5 +4,9 @@ module.exports = {
     transform: {
       '^.+\\.jsx?$': 'babel-jest',
     },
+
+    transformIgnorePatterns: [
+      '/node_modules/(?!nombre-del-paquete|otro-paquete)/',
+    ],
   };
   
