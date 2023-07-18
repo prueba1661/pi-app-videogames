@@ -8,5 +8,8 @@ module.exports = {
     transformIgnorePatterns: [
       '/node_modules/(?!nombre-del-paquete|otro-paquete)/',
     ],
+
+    setupFilesAfterEnv: ['<rootDir>/src/setupTests.js'],
+    
   };
   
