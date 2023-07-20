@@ -1,21 +1,31 @@
-const request = require("supertest");
-const server = require("../src/app");
-const { Videogame, conn } = require("../src/db");
+const request = require('supertest');
+const app = require('../src/app');
+const { Videogame } = require('../src/db');
 
-describe("Videogames Routes", () => {
-  beforeAll(async () => {
-    await conn.sync({ force: true });
-  });
 
-  describe("GET / Videogame", () => {
-    test("Debe responder con un estado 200", async () => {
-      const res = await request(server).get("/videogame");
-      expect(res.statusCode).toBe(200);
+describe('GET /videogames', () => {
+  it('should return a list of games', async () => {
+    const response = await request(app).get('/videogames');
+    expect(response.status).toBe(200);
+    expect(response.body).toBeInstanceOf(Array);
+    expect(response.body.length).toBeGreaterThan(0);
+  }, 30000);
+
+  it('should return an array of 100 games', async () => {
+    const response = await request(app).get('/videogames');
+    expect(response.status).toBe(200);
+    expect(response.body).toBeInstanceOf(Array);
+    expect(response.body.length).toBe(100);
+  }, 30000);
+
+  // Test case for handling errors
+  it('should return an error status if something goes wrong', async () => {
+    // Mock the behavior of Videogame.findAll to throw an error
+    jest.spyOn(Videogame, 'findAll').mockImplementation(() => {
+      throw new Error('Mocked error');
     });
 
-    test("Debe responder con un array de juegos", async () => {
-      const res = await request(server).get("/videogame");
-      expect(res.body).toEqual(expect.arrayContaining([]));
-    });
+    const response = await request(app).get('/videogames');
+    expect(response.status).toBe(500);
   });
 });

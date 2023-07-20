@@ -13,7 +13,7 @@ gameId.get('/:id', async (req, res) => {
  try {
   const gameId = req.params.id;
   let filteredGame;
-  //si le id pertenece a la bd busca y trae la informacion de la base de datos
+  //si id pertenece a la db busca y trae la informacion de la db
   if (gameId.includes('-')) {
    const dbGame = await Videogame.findOne({ where: { id: gameId } });
    if (!dbGame) {
@@ -60,7 +60,7 @@ gameId.get('/:id', async (req, res) => {
     tags,
     esrb_rating,
    } = response.data;
-   //organiza la informacion que se envia al front independiente de si es de la base de datos o de la api
+   //organiza la informacion que se envia al front por mas que sea de la api o de la db
    filteredGame = {
     id,
     name,
