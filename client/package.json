@@ -50,6 +50,7 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-styled-components-css": "^2.0.2",
     "jest": "^27.5.1",
+    "jest-mock": "^29.6.1",
     "prettier": "^2.8.4"
   },
   "browserslist": {

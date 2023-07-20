@@ -7,6 +7,8 @@ module.exports = {
 
     transformIgnorePatterns: [
       '/node_modules/(?!nombre-del-paquete|otro-paquete)/',
+      '^.+\\.jsx?$',
+    '^.+\\.gif$',
     ],
 
     setupFilesAfterEnv: ['<rootDir>/src/setupTests.js'],
