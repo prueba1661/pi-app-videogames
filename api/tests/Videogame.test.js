@@ -1,4 +1,4 @@
-const {db, Videogame, conn } = require('../../src/db.js');
+const {Videogame, conn } = require('../src/db.js');
 
 describe('Modelos DB', () => {
   beforeAll(async () => {
