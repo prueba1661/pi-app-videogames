@@ -1,8 +1,8 @@
 module.exports = {
-    // ...otras configuraciones de Jest...
   
-    transform: {
-      '^.+\\.jsx?$': 'babel-jest',
+  testEnvironment: 'node', // Add this line to specify the test environment
+  transform: {
+    '^.+\\.jsx?$': 'babel-jest', // Assuming you have Babel configured to handle ES modules
     },
 
     transformIgnorePatterns: [
