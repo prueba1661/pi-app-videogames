@@ -6,7 +6,7 @@ import { useSelector, useDispatch } from 'react-redux'; // Importing directly fr
 import configureStore from 'redux-mock-store'; // Importing configureStore to create a mocked Redux store
 
 // Import the component to be tested
-import Cards from '../components/Cards/Cards';
+import Cards from '../src/components/Cards/Cards';
 
 // Create a mocked Redux store
 const mockStore = configureStore([]);
