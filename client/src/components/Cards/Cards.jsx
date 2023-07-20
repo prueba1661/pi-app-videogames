@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { getGames, setCurrentPage } from '../../redux/actions/actions'
-import Error from '../../utils/Error'
 import Loading from '../../utils/Loading'
 import Card from '../Card/Card'
 import {
@@ -17,7 +16,6 @@ const NoResults = () => <div>we have not found games.</div>
 export default function Cards() {
   const dispatch = useDispatch()
   const currentPage = useSelector((state) => state.currentPage)
-  const error = useSelector((state) => state.error)
   const [loading, setLoading] = useState(false)
 
   const games = useSelector((state) => state.filtredGames)
