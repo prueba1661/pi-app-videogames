@@ -1,5 +1,6 @@
 module.exports = {
-    // ... other Jest configuration options ...
+  testEnvironment: 'jest-environment-jsdom-sixteen',
+  setupFilesAfterEnv: ['./jest.setup.js'],
     transformIgnorePatterns: [
       // Ignore files with non-JavaScript extensions
       '<rootDir>/node_modules/', // Ignore node_modules
