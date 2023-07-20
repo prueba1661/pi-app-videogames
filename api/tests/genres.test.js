@@ -3,52 +3,52 @@ const app = require('../src/app');
 const { Genres } = require('../src/db'); 
 const axios = require('axios');
 
-jest.mock('axios'); // Mock axios to prevent actual network requests
+jest.mock('axios'); // // Simula axios para evitar solicitudes de red reales
+
 
 describe('GET /genres/get', () => {
-  it('should fetch genres from the external API and add them to the database', async () => {
-    // Mock the external API response
+  it('debería obtener géneros desde la API externa y agregarlos a la base de datos', async () => {
+    // Simula la respuesta de la API externa
     const mockGenres = [
       { name: 'Genre 1' },
       { name: 'Genre 2' },
-      // Add more test genres here if needed
     ];
     const mockResponse = {
       data: { results: mockGenres },
     };
     axios.get.mockResolvedValue(mockResponse);
 
-    // Mock the Genres model's findOrCreate method
+    // Simula el método findOrCreate del modelo Genres
     const mockFindOrCreate = jest.spyOn(Genres, 'findOrCreate');
     mockFindOrCreate.mockImplementation(async (options) => {
-      // Simulate that a new record was created for each genre
-      return [{}, true]; // Return an empty object and true to indicate a new record was created
+      // Simula que se creó un nuevo registro para cada género
+      return [{}, true]; // Devuelve un obj vacio y true para indicar que se creó un nuevo registro
     });
 
-    // Perform the request to the /genres/get endpoint
+    // Realiza la solicitud al endpoint /genres/get
     const response = await request(app).get('/genres/get');
 
-    // Assert that the request was successful
+    // Asegura que la solicitud fue exitosa
     expect(response.status).toBe(200);
     expect(response.body).toBeInstanceOf(Array);
 
-    // Assert that genres were added to the database
+    // Asegura que se agregaron géneros a la base de datos
     expect(mockFindOrCreate).toHaveBeenCalledTimes(mockGenres.length);
 
-    // After genres are added, fetch all genres from the database to ensure they were inserted successfully
+    // Después de agregar los géneros, obtén todos los géneros de la base de datos para asegurarte de que se insertaron correctamente
     const allGenres = await Genres.findAll();
-    console.log('allGenres:', allGenres); // Log allGenres to the console for debugging
+    console.log('allGenres:', allGenres); // Registra allGenres en la consola para depuración
     expect(allGenres.length).toBeGreaterThan(0);
   });
 
-  it('should return an error status if something goes wrong', async () => {
-    // Mock the external API request to throw an error
+  it('debería devolver un estado de error si algo sale mal', async () => {
+    // Simula que la solicitud a la API externa lanza un error
     axios.get.mockRejectedValue(new Error('Mocked error'));
 
-    // Perform the request to the /genres/get endpoint
+    // Realiza la solicitud al endpoint /genres/get
     const response = await request(app).get('/genres/get');
 
-    // Assert that the request resulted in an error response
+    // Asegura que la solicitud resultó en una respuesta de error
     expect(response.status).toBe(500);
   });
 });
