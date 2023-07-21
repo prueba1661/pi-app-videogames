@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { emptyStar, star } from '../../../utils/icons'
+import { emptyStar, star } from '../../utils/icons'
 import {
   AddGameCard,
   CardContent,

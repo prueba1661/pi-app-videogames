@@ -10,7 +10,7 @@ import {
   SelectorsItems,
   SentBtn,
 } from './AddGame.style'
-import GameCard from './GameCard/GameCard'
+import GameCard from '../GameCard/GameCard'
 import { validate } from './validation.js'
 
 export default function AddGame() {
