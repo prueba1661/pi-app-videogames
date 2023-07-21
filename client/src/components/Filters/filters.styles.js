@@ -9,6 +9,7 @@ export const FiltersWrapper = styled.section`
   flex-direction: column;
   align-items: center;
   background-color: #1E2E34;
+  margin-left: 20px;
 `
 
 export const FiltersContainer = styled.div`
