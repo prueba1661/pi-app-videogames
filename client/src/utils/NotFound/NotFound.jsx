@@ -10,7 +10,7 @@ const NotFound = () => {
                 className={style.img}
                 />
                 <p className={style.text}>Oops! Page not found</p>
-                <NavLink to='/'><button className={style.btn}>Back</button></NavLink>
+                <NavLink to='/home'><button className={style.btn}>Back</button></NavLink>
             </div>
     )
 }

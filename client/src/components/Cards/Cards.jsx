@@ -4,12 +4,12 @@ import { getGames, setCurrentPage } from '../../redux/actions/actions'
 import Loading from '../../utils/Loading'
 import Card from '../Card/Card'
 import {
-  CardContainer,
   CardsContainer,
   CardsWrapper,
   PageNumber,
   Pagination,
 } from './Cards.styles'
+//container
 
 const NoResults = () => <div>we have not found games.</div>
 

@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import logoGames from '../../assets/logoGames.jpg'
 import Search from '../Search/Search'
-import { Container, Item, Item_Link, Logo, NavList } from './Header.styles.js'
+import { Container, Item, Item_Link, Logo, NavList } from './header.styles.js'
 
 export default function Header() {
   const handleClick = () => {

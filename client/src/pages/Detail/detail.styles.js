@@ -24,19 +24,20 @@ to {
 export const DetailGame = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 10px;
   animation: ${FadeIn} 6s cubic-bezier(0.25, 1, 0.3, 1) both;
 `
 
 export const MainContent = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   img {
-    width: 100%;
-    height: 100%;
+    width: 130vh;
+    height: 70vh;
+    margin: 0, auto;
   }
 `
 
@@ -83,6 +84,14 @@ export const Feature = styled.div`
   gap: 10px;
 `
 
+export const Title = styled.div`
+text-align: center;
+color: #9FD7D0;
+font-size: 28px;
+font-weight: 800;
+font-family: Verdana;
+`
+
 export const Gallery = styled.div`
   display: grid;
   gap: 20px;
@@ -93,14 +102,4 @@ export const Gallery = styled.div`
     height: auto;
     
   }
-`
-
-export const Trailers = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  video {
-  width: 100%;
-  height: auto;
-}
 `

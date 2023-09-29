@@ -9,7 +9,7 @@ import {
   SelectorsBlock,
   SelectorsItems,
   SentBtn,
-} from './AddGame.style'
+} from './addGame.style'
 import GameCard from '../GameCard/GameCard'
 import { validate } from './validation.js'
 

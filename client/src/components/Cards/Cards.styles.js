@@ -20,31 +20,6 @@ export const CardsContainer = styled.div`
   gap: 30px;
 `
 
-export const CardContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 22px;
-  background-color: #205860;
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(9.2px);
-  -webkit-backdrop-filter: blur(9.2px);
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  padding-bottom: 30px;
-  border-radius: 5px;
-  overflow: hidden;
-  max-width: 300px;
-  opacity: 0;
-  a{
-   color: #fff;
-   text-decoration: none;
-   &:hover {
-    color: #969696;
-    text-decoration: none;
-   }
-  }
-`
-
 export const Pagination = styled.div`
   display: flex;
   justify-content: center;

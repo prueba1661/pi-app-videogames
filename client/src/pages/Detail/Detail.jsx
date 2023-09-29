@@ -10,10 +10,10 @@ import {
   DetailWrapper,
   Feature,
   Features,
+  Title,
   Gallery,
   MainContent,
-  Trailers,
-} from './Detail.styles'
+} from './detail.styles'
 
 export default function Detail() {
   const { id } = useParams()
@@ -68,19 +68,12 @@ export default function Detail() {
               </Features>
             </ContentBlock>
           </MainContent>
+          <Title>Screenshots:</Title>
           <Gallery>
             {game.short_screenshots?.map((img, index) => (
               <img key={index} src={img} alt={`${img} ${index}`} />
             ))}
           </Gallery>
-          <Trailers>
-            {game.trailers?.map((trailer, index) => (
-              <video controls key={index} poster={trailer.cover}>
-                <source src={trailer.media} type="video/mp4" />
-                video not supported
-              </video>
-            ))}
-          </Trailers>
         </DetailGame>
       ) : null}
     </DetailWrapper>

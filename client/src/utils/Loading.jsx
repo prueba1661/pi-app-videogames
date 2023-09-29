@@ -1,17 +1,3 @@
-// import React from 'react'
-// import loading from '../assets/loading.gif'
-// import styles from './utils.module.css'
-
-// const Loading = () => (
-//   <div>
-//   <img src={loading} alt="loading" 
-//   className={styles.loading}
-//   />
-//   <p className={styles.loadingText}>Loading...</p>
-//   </div>
-// )
-
-// export default Loading
 import React from 'react'
 import loading from '../assets/loading-neon.gif'
 import styles from './Loading.module.css'
@@ -19,7 +5,7 @@ import styles from './Loading.module.css'
 const Loading = () => (
   <div className={styles.container}>
   <img src={loading} alt="loading" 
-  className={styles.loading}
+  className={styles.imgLoading}
   />
   <p className={styles.loadingText}>We're loading...</p>
   </div>
