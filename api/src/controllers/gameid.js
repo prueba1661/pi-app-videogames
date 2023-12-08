@@ -83,30 +83,10 @@ gameId.get('/:id', async (req, res) => {
 
   res.status(200).json(filteredGame);
  } catch (error) {
-  res.status(500).send(error.message);
+    console.error(error);
+    res.status(500).json({ error: 'Internal Server Error', message: error.message });
  }
 });
 
 
 module.exports = gameId
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

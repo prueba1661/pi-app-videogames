@@ -108,7 +108,8 @@ search.get('/', async (req, res) => {
    res.status(200).json(filteredGames);
   }
  } catch (error) {
-  res.status(500).send(error.message);
+    console.error(error);
+    res.status(500).json({ error: 'Internal Server Error', message: error.message });
  }
 });
 

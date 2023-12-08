@@ -111,7 +111,8 @@ allGames.get('/', async (req, res) => {
   const combinedGames = filteredDbGames.concat(games);
   res.status(200).json(combinedGames);
  } catch (error) {
-  res.status(500).send(error.message);
+    console.error(error);
+    res.status(500).json({ error: 'Internal Server Error', message: error.message });
  }
 });
 

@@ -8,9 +8,10 @@ import Home from './pages/Home/Home'
 import Landing from './pages/Landing/Landing'
 import SearchResults from './pages/Search_results/SearchResults'
 import './App.css';
-import axios from 'axios';
+import axios from 'axios'
 
-axios.defaults.baseURL = 'https://app-videogames-production.up.railway.app';
+axios.defaults.baseURL = 'http://localhost:3001/';
+
 
 function App() {
   const location = useLocation()

@@ -35,7 +35,8 @@ addGame.post('/', async (req, res) => {
 
   res.status(201).json(newVideogame);
  } catch (error) {
-  res.status(500).send(error.message);
+    console.error(error);
+    res.status(500).json({ error: 'Internal Server Error', message: error.message });
  }
 });
 
