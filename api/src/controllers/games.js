@@ -107,7 +107,7 @@ allGames.get('/', async (req, res) => {
    }
   }
 
-  // Concat los juegos de la DB con la API
+  // Sumar los juegos de la DB con la API
   const combinedGames = filteredDbGames.concat(games);
   res.status(200).json(combinedGames);
  } catch (error) {
